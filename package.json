@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Boombag0607/SEDS-web#readme",
   "devDependencies": {
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "tailwindcss": "^3.0.23"
   }
 }
