@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+/* body{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    padding: 0;
+    margin: 0;
+    color: #1f1f1f;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+} */
+
+i {
+  color: white;
+  position: absolute;
+}
+
+.navbar {
+  width: 100%;
+  height: 7rem;
+  background-color: black;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  top: 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav-ele {
+  color: white;
+  position: absolute;
+  top: 50%;
+}
+
+.nav-rocket {
+  left: 26%;
+}
+
+.nav-rocket::after {
+  content: "";
+  height: 2px;
+  width: 65%;
+  background: #4a93e0;
+  position: absolute;
+  margin: auto;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.nav-cansat {
+  left: 35%;
+}
+
+.nav-cansat::after {
+  content: "";
+  height: 2px;
+  width: 65%;
+  background: #4a93e0;
+  position: absolute;
+  margin: auto;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.nav-cubesat {
+  left: 60%;
+}
+
+.nav-cubesat::after {
+  content: "";
+  height: 2px;
+  width: 65%;
+  background: #4a93e0;
+  position: absolute;
+  margin: auto;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.nav-rnd {
+  left: 70%;
+}
+.nav-rnd::after {
+  content: "";
+  height: 2px;
+  width: 65%;
+  background: #4a93e0;
+  position: absolute;
+  margin: auto;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.fa-search {
+  left: 86%;
+}
+
+.fa-bars {
+  left: 89%;
+}
+
+.logo {
+  position: absolute;
+  width: 20%;
+  height: 50%;
+  background: url(seds_logo_w.png);
+  background-size: 10rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.toggle_btn {
+  background-color: #fff;
+  position: absolute;
+  width: 20%;
+  height: 6%;
+  border-radius: 30px;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 1% 0;
+}
+
+.popular_btn {
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 4%;
+  border-radius: 30px;
+  padding: 4% 7%;
+  font-family: "Comfortaa", cursive;
+}
+.chronological_btn {
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 3%;
+  border-radius: 30px;
+  padding: 4% 9%;
+  font-family: "Comfortaa", cursive;
+  color: #fff;
+}
+.blackie {
+  border: none;
+  text-align: center;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 3%;
+  color: white;
+  background-color: #000;
+  border-radius: 30px;
+  padding: 4% 7%;
+  font-family: "Comfortaa", cursive;
+  transition: 0.5s;
+  height: 2rem;
+  width: 60%;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  margin: 5% 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container .box {
+  margin: 3%;
+  height: 15rem;
+  width: 15rem;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.container .box .img,
+.container .box .img2,
+.container .box .img3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(img1.jpeg);
+  background-size: 25rem;
+  background-position: center;
+}
+
+.container .box .img2 {
+  background: url(img2.jpeg);
+  background-size: 15rem;
+  background-position: center;
+}
+
+.container .box .img3 {
+  background: url(img3.jpeg);
+  background-size: 28rem;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  bottom: -150%;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.box:hover .overlay {
+  bottom: -10%;
+}
+
+.archangel {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  color: #4a93e0;
+  display: inline-block;
+  position: relative;
+  align-content: center;
+  margin-top: 5%;
+}
+
+.archangel::after {
+  content: "";
+  height: 2px;
+  width: 65%;
+  background: #4a93e0;
+  position: absolute;
+  margin: auto;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+}
+
+.archangel:hover {
+  width: 20%;
+}
+
+a:link {
+  text-decoration: none;
+  color: #4a93e0;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #4a93e0;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #4a93e0;
+}
+
+a:active {
+  text-decoration: none;
+  color: #4a93e0;
+}
