@@ -77,7 +77,7 @@ targets.forEach((target, index) => {
     .to(target, { opacity: 0, duration: 0.4 }, 0.8)
 });
 // Video
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 const canvas = document.getElementById("video");
 const context = canvas.getContext("2d");
 // canvas.width = 1208;
@@ -341,16 +341,18 @@ function positionLabels() {
   const dimensions = document.getElementById("video").getBoundingClientRect();
   const left = dimensions.left;
   const top = dimensions.top;
+  const height = dimensions.height;
+  const width = dimensions.width;
   console.log("left", left, "top", top)
   const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
   // const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
   if (vw > 500) {
 
-    applyPos("bulkhead", 23, 6);
-    applyPos("casing", 34, 41);
-    applyPos("grains", 48, 42);
-    applyPos("nozzle", 45, 62);
-    applyPos("motor", 17, 24);
+    applyPos("bulkhead", 25, 8);
+    applyPos("casing", 35, 46);
+    applyPos("grains", 55, 54);
+    applyPos("nozzle", 52, 79);
+    applyPos("motor", 19, 31);
   } else {
     console.log("Let's go mobile!")
     applyPos("bulkhead", 31, 124);
@@ -361,7 +363,9 @@ function positionLabels() {
   }
   function applyPos(lname, topOffset, leftOffset) {
     const label = document.getElementById(lname);
-    label.style.top = `calc(${top}px + ${topOffset}%)`;
-    label.style.left = `calc(${left}px + ${leftOffset}%)`;
+    topOffset = topOffset / 100 * height;
+    leftOffset = leftOffset / 100 * width;
+    label.style.top = (top + topOffset) + "px";//`calc(${top}px + ${topOffset}px)`;
+    label.style.left = (left + leftOffset) + "px";//`calc(${left}px + ${leftOffset}px)`;
   }
 }

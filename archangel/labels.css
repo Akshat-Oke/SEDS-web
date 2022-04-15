@@ -6,7 +6,7 @@ div.label2 {
   font-size: 2rem;
   display: flex;
   align-items: center;
-  color: black;
+  color: black !important;
   opacity: 0;
 }
 @media screen and (max-width: 500px) {
@@ -30,7 +30,7 @@ div.label2 {
 #nozzle {
   left: 200px;
 }
-#motor {
+#motor p {
   color: white;
 }
 /* div.label:nth-child(even) {

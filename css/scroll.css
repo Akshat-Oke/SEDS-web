@@ -17,6 +17,7 @@
   display: flex;
   justify-content: center;
   transform: scale(0.6);
+  z-index: 100;
 }
 @media screen and (max-width: 900px) {
   .mouse-scroll {
