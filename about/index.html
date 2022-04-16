@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEDS - Who we are</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap");
+      h2 {
+        font-size: 8rem;
+        font-family: "Playfair Display", sans-serif;
+      }
+      body {
+        overflow-x: hidden;
+        padding-top: 12.4vh;
+      }
+      section img {
+        max-height: 101vh;
+        filter: brightness(0.5);
+      }
+      section {
+        position: relative;
+      }
+      #about > h2 {
+        position: absolute;
+        top: 3%;
+        left: 65%;
+      }
+      * {
+        font-family: "Roboto", sans-serif;
+      }
+      p {
+        text-align: justify;
+        margin-bottom: 10px;
+        font-size: 1.9rem;
+        max-width: 45vw;
+      }
+      #about > div {
+        position: absolute;
+        top: calc(14% + 40px);
+        left: 46%;
+      }
+      #s2 img {
+        position: absolute;
+        right: 0;
+        top: -30px;
+        max-height: 85vh;
+      }
+      #s2 > div {
+        margin-left: 8vw;
+        transform: translateY(-5%);
+      }
+      #s2 {
+        height: 87vh;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="about">
+      <img src="./images/lift-off.jpg" alt="Lift-off" />
+      <h2>About Us</h2>
+      <div>
+        <p>
+          SEDS BPHC was founded in April 2019 by a group of students with a
+          burning passion for aerospace. Today the club has proudly grown into
+          an 80+ member strong team. The club started out by competing in the
+          Spaceport America Cup, and has since expanded to cubesats, cansats,
+          rocket motors and thrust vector control projects.
+        </p>
+        <p>
+          The team is an amalgamation of undergraduate students from almost all
+          fields of engineering and science in our college. Mechanical
+          Engineering, Computer Science, Biology, Electronics and Communication
+          Engineering, Physics are to name a few.
+        </p>
+        <p>
+          This season, we aim to launch our first rocket on-site at the
+          Spaceport America Cup 2022 and participate in the Cansat Competition
+          organized by the American Astronautical Society. We are also designing
+          two CubeSats which we plan to launch in the near future.Our newly
+          established R&D division is testing solid rocket motors and intends to
+          work with hybrid motors soon. Thrust Vector Control is also an area of
+          research for the team.
+        </p>
+      </div>
+    </section>
+    <section id="s2">
+      <img src="./images/launch.jpg" alt="Blast off!" />
+      <div>
+        <h2>SA Cup</h2>
+        <p>
+          SEDS BPHC made its debut in this prestigious competition in 2021.
+          Among the four BITS Pilani campuses, we’re the first & only one to
+          participate in the SA Cup. We are also one of the only 6 teams
+          representing India among the 153 international teams participating in
+          the competition.
+        </p>
+        <p>
+          For our category, the goal is to build a rocket 8 feet long, weighing
+          approximately 28kg, which flies upto 10,000 feet and uses
+          Commercially-off-the-shelf (COTS) solid rocket motors.
+        </p>
+      </div>
+    </section>
+    <section style="height: 100vh"></section>
+    <nav class="navbar row">
+      <i class="nav-ele fa-solid fa-bars"></i>
+      <a class="nav-ele">Rocket</a>
+      <a class="nav-ele">CanSat</a>
+      <img src="../assets/images/seds_logo_w.png" alt="SEDS Logo" />
+      <a class="nav-ele">CubeSat</a>
+      <a class="nav-ele">R&D</a>
+      <i class="nav-ele fa fa-search" aria-hidden="true"></i>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/ScrollTrigger.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
