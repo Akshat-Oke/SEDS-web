@@ -18,29 +18,34 @@ gsap.registerEffect({
   defaults: { duration: 0.5 },
   extendTimeline: true
 });
-gsap.to(".mouse-scroll", {
-  alpha: 0,
-  duration: 0.7,
-  scrollTrigger: {
-    // trigger: "body",
-    scrub: 0.5,
-    // start: "top top",
-    end: "top+=400px top",
-  }
-})
 gsap.fromTo(".mouse-scroll", {
   alpha: 0,
-  duration: 0.7,
+  duration: 0.1,
   scrollTrigger: {
     // trigger: "body",
     markers: true,
     scrub: 0.5,
-    start: "bottom bottom+=200px",
-    end: "bottom bottom",
+    // start: "top top",
+    // end: "top+=400px top",
+    start: "bottom-=400px bottom",
+    end: "bottom+=100px bottom"
   }
 }, {
   alpha: 1
 })
+// gsap.fromTo(".mouse-scroll", {
+//   alpha: 0,
+//   duration: 0.7,
+//   scrollTrigger: {
+//     // trigger: "body",
+//     markers: true,
+//     scrub: 0.5,
+//     start: "bottom bottom+=200px",
+//     end: "bottom bottom",
+//   }
+// }, {
+//   alpha: 1
+// })
 gsap.timeline({
   defaults: { duration: 1.2 },
   scrollTrigger: {
@@ -85,7 +90,7 @@ for (let i = 0; i < frameCount; i++) {
   images.push(img);
 }
 images[frameCount - 1].onload = function () {
-  render();
+  render(frameCount - 1);
   positionLabels();
   scrollBottom();
 };

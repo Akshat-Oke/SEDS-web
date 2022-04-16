@@ -1,12 +1,22 @@
 gsap.registerPlugin(ScrollTrigger);
+gsap.to(".mouse-scroll", {
+  alpha: 0,
+  duration: 0.7,
+  scrollTrigger: {
+    // trigger: "body",
+    scrub: 0.5,
+    // start: "top top",
+    end: "top+=400px top",
+  }
+})
 const canvas = document.getElementById("intro-video");
 const context = canvas.getContext("2d");
 // canvas.width = 1208;
 // canvas.height = 600;
 
-const frameCount = 33;
+const frameCount = 140;
 const currentFrame = (index) =>
-  `../assets/videos/intro/frame-${(index + 1).toString().padStart(2, "0")}.jpg`;
+  `../assets/videos/home/frame-${(index + 1).toString().padStart(3, "0")}.jpg`;
 
 let img = new Image();
 img.onload = function () {

@@ -7,6 +7,10 @@
   padding: 0;
   box-sizing: inherit;
 }
+*::selection {
+  color: rgb(51, 66, 228);
+  background-color: black;
+}
 html {
   font-size: 62.5%; /* 1rem = 10px */
 }

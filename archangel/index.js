@@ -231,37 +231,31 @@ function mobileLabels() {
     // }, {
     //   alpha: 1,
     // })
-    .fade("div.label:nth-child(1)")
     .to("#video", {
       duration: 0.2,
       marginLeft: "97%",
       marginTop: "15%",
-    }, "<")
+    })
+    .fade("div.mobile-label:nth-child(1)", "<")
     // .fromTo("div.label:nth-child(2)", {
     //   duration: 0.2,
     //   alpha: 0,
     // }, {
     //   alpha: 1
     // })
-    .fade("div.label:nth-child(2)")
+    .fade("div.mobile-label:nth-child(2)")
     .to("#video", {
       duration: 0.2,
       marginLeft: "0%",
       marginTop: "0%"
     }, "<")
-    // .fromTo("div.label:nth-child(3), div.label:nth-child(4)", {
-    //   duration: 0.2,
-    //   alpha: 0,
-    // }, {
-    //   alpha: 1
-    // })
-    .fade("div.label:nth-child(3)")
+    .fade("div.mobile-label:nth-child(3)")
     .to("#video", {
       duration: 0.2,
       marginLeft: "-51%",
       marginTop: "1%"
     }, "<")
-    .fade("div.label:nth-child(4)")
+    .fade("div.mobile-label:nth-child(4)")
     .to("#video", {
       duration: 0.2,
       marginLeft: "-110%",
@@ -355,11 +349,11 @@ function positionLabels() {
     applyPos("motor", 19, 31);
   } else {
     console.log("Let's go mobile!")
-    applyPos("bulkhead", 31, 124);
-    applyPos("casing", 31, 141);
-    applyPos("grains", 49, 128);
-    applyPos("nozzle", 47, 147);
-    applyPos("motor", 13, 114);
+    // applyPos("bulkhead", 31, 124);
+    // applyPos("casing", 31, 141);
+    // applyPos("grains", 49, 128);
+    // applyPos("nozzle", 47, 147);
+    // applyPos("motor", 13, 114);
   }
   function applyPos(lname, topOffset, leftOffset) {
     const label = document.getElementById(lname);
