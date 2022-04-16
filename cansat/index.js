@@ -82,7 +82,7 @@ function video1() {
     snap: "frame",
     ease: "none",
     scrollTrigger: {
-      scrub: 0.5,
+      scrub: 0.8,
       trigger: "#s1",
       start: "top-=100px bottom",
       end: "bottom bottom",

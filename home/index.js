@@ -45,7 +45,7 @@ tl.to(airpods, {
   snap: "frame",
   ease: "none",
   scrollTrigger: {
-    scrub: 0.5,
+    scrub: 1.5,//0.5,
     // markers: true,
     end: "bottom bottom+=200px"
   },
@@ -78,7 +78,9 @@ tl.to(airpods, {
   })
 
 images[0].onload = render;
-
+document.addEventListener("DOMContentLoaded", () => {
+  render();
+})
 function render() {
   context.clearRect(0, 0, canvas.width, canvas.height);
   context.drawImage(images[airpods.frame], 0, 0);

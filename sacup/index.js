@@ -18,21 +18,21 @@ gsap.registerEffect({
   defaults: { duration: 0.5 },
   extendTimeline: true
 });
-gsap.fromTo(".mouse-scroll", {
-  alpha: 0,
-  duration: 0.1,
-  scrollTrigger: {
-    // trigger: "body",
-    markers: true,
-    scrub: 0.5,
-    // start: "top top",
-    // end: "top+=400px top",
-    start: "bottom-=400px bottom",
-    end: "bottom+=100px bottom"
-  }
-}, {
-  alpha: 1
-})
+// gsap.fromTo(".mouse-scroll", {
+//   alpha: 0,
+//   duration: 0.1,
+//   scrollTrigger: {
+//     // trigger: "body",
+//     markers: true,
+//     scrub: 0.5,
+//     // start: "top top",
+//     // end: "top+=400px top",
+//     start: "bottom-=400px bottom",
+//     end: "bottom+=100px bottom"
+//   }
+// }, {
+//   alpha: 1
+// })
 // gsap.fromTo(".mouse-scroll", {
 //   alpha: 0,
 //   duration: 0.7,
@@ -155,6 +155,7 @@ function labelScene(num) {
   })
   return tl;
 }
+gsap.set(".mouse-scroll", { alpha: 0 })
 const masterTimeline = gsap.timeline();
 masterTimeline.add(video1())
   .add(labelScene(1))
@@ -167,7 +168,19 @@ masterTimeline.add(video1())
   .add(videoResume(161, frameCount - 13, "#s5"))
   .add(labelScene(5))
   .add(videoResume(frameCount - 13, frameCount, "#s6"))
-
+  .to(".mouse-scroll", {
+    alpha: 1,
+    duration: 1,
+    scrollTrigger: {
+      onEnter: () => console.log("Fade"),
+      trigger: "#s6",
+      start: "center bottom-=100px",
+      end: "center bottom-=200px",
+      scrub: true,
+    }
+  }, {
+    alpha: 1
+  })
 //Labels
 window.addEventListener('resize', positionLabels, true);
 function positionLabels() {

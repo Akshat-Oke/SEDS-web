@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="labels.css" />
 
     <style>
+      body {
+        background: linear-gradient(
+          90deg,
+          rgb(17 17 17) 0%,
+          #171717 50%,
+          #222222 51%
+        );
+      }
       #intro p {
         font-size: 2.3rem;
       }
@@ -88,7 +96,7 @@
       <a class="nav-ele">R&D</a>
       <i class="nav-ele fa fa-search" aria-hidden="true"></i>
     </nav>
-    <div class="mouse-scroll">
+    <div class="mouse-scroll up">
       <div class="mouse"></div>
     </div>
     <canvas id="video"></canvas>
@@ -359,7 +367,7 @@
       </div>
     </section>
     <section class="filler-video" id="s6"></section>
-    <section style="height: 500px"></section>
+    <section style="height: 500px" id="for-scroll"></section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/ScrollTrigger.min.js"></script>
     <script src="index.js"></script>

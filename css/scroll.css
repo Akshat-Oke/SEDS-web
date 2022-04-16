@@ -24,6 +24,7 @@
     transform: scale(0.4);
   }
 }
+
 .mouse-scroll::after {
   content: "Scroll down";
   font-family: "Ubuntu", sans-serif;
@@ -36,6 +37,9 @@
   bottom: -45px;
   left: 50%;
   transform: translateX(-50%);
+}
+.mouse-scroll.up::after {
+  content: "Scroll up";
 }
 .mouse {
   background: #4e5559
