@@ -41,7 +41,7 @@ canvas {
   /* border: 2px solid red; */
 }
 nav {
-  z-index: 999;
+  z-index: 998;
   position: fixed;
   top: 0;
   left: 0;

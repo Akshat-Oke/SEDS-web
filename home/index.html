@@ -65,9 +65,19 @@
       <div class="mouse"></div>
     </div>
     <main>
-      <div class="menu"></div>
+      <div class="menu" id="menu">
+        <a class="nav-ele" href="/sacup/">Rocket</a>
+        <a class="nav-ele" href="/cansat/">CanSat</a>
+        <img src="../assets/images/seds_logo_w.png" alt="SEDS Logo" />
+        <a class="nav-ele" href="/cubesat/">CubeSat</a>
+        <a class="nav-ele">R&D</a>
+      </div>
       <nav class="navbar row">
-        <i class="nav-ele fa-solid fa-bars"></i>
+        <i
+          id="menu-open"
+          onclick="document.getElementById('menu').classList.toggle('open')"
+          class="nav-ele fa-solid fa-bars"
+        ></i>
         <a class="nav-ele" href="/sacup/">Rocket</a>
         <a class="nav-ele" href="/cansat/">CanSat</a>
         <img src="../assets/images/seds_logo_w.png" alt="SEDS Logo" />

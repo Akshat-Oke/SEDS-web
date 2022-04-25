@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cubesat - SEDS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/scroll.css" />
+    <link rel="stylesheet" href="label.css" />
+    <style>
+      .container-hero {
+        /* height: calc(3770px - 100vh); */
+        height: calc(1200px + 180vh);
+        padding-top: 50vh;
+        /* top: 40%; */
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        position: relative;
+      }
+      @media screen and (max-width: 730px) {
+        .container-hero {
+          height: calc(200vh + 1200px);
+        }
+      }
+      #cansat h1 {
+        transform: translateY(-50%);
+        text-transform: uppercase;
+      }
+      canvas {
+        max-height: 87.6vh;
+        max-width: none;
+        /* border: 2px solid orangered; */
+        top: 12.4vh;
+        transform: translateX(-50%);
+      }
+      body {
+        padding-bottom: 2800px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar row">
+      <i class="nav-ele fa-solid fa-bars"></i>
+      <a class="nav-ele" href="/sacup/">Rocket</a>
+      <a class="nav-ele" href="/cansat/">CanSat</a>
+      <img src="../assets/images/seds_logo_w.png" alt="SEDS Logo" />
+      <a class="nav-ele" href="/cubesat/">CubeSat</a>
+      <a class="nav-ele">R&D</a>
+      <i class="nav-ele fa fa-search" aria-hidden="true"></i>
+    </nav>
+    <div class="mouse-scroll">
+      <div class="mouse"></div>
+    </div>
+    <canvas id="video"></canvas>
+    <main>
+      <div class="container-hero" id="hero">
+        <div class="h1" id="cansat">
+          <h1>
+            <a class="blue-link" href="https://www.google.com/">CUBESAT</a>
+          </h1>
+        </div>
+      </div>
+    </main>
+    <section id="labels1">
+      <div class="paragraph" id="p1">
+        The NEMOlite is a 1U satellite that we plan to launch in late 2023.
+        <div class="line"></div>
+      </div>
+      <div class="paragraph" id="p2">
+        This demo sat’s objective is to get flight time and to test out various
+        subsystems.
+        <div class="line"></div>
+      </div>
+    </section>
+    <div id="labels2" class="label">
+      <p>
+        NEMO (Near Earth Microplastics Observation) is a remote sensing
+        satellite which will monitor the level of microplastics in the Gulf of
+        Mannar.
+      </p>
+      <div style="height: 14px"></div>
+      <p>It will be launched tentatively in late 2025.</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/ScrollTrigger.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
