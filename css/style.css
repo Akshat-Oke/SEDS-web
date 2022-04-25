@@ -157,16 +157,51 @@ a:active {
   z-index: 999;
   top: 0;
   left: 0;
-  transform: translateX(-100%);
+  /* transform: translateX(-100%); */
+  visibility: hidden;
   width: 100%;
-  height: 100%;
-  background: #2a282f;
+  /* height: 100%; */
+  height: 0;
+  /* background: #24222a; */
+  background-color: white;
+  color: #111;
   transition: 0.45s;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0;
 }
 .menu.open {
-  transform: translateX(0);
+  /* transform: translateX(0); */
+  height: 80vh;
+  visibility: visible;
+  opacity: 1;
+}
+.menu a {
+  color: #121;
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+  font-weight: 300;
+}
+.menu h2 {
+  text-transform: uppercase;
+  font-size: 3.4rem;
+}
+.menu .divider {
+  width: 85%;
+  height: 2px;
+  background-color: black;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+.menu .close {
+  transition: 1s;
+  position: absolute;
+  top: 2.4rem;
+  right: 2.4rem;
+  font-size: 3rem;
+}
+.menu .close:hover {
+  cursor: pointer;
 }

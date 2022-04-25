@@ -66,23 +66,30 @@
     </div>
     <main>
       <div class="menu" id="menu">
-        <a class="nav-ele" href="/sacup/">Rocket</a>
-        <a class="nav-ele" href="/cansat/">CanSat</a>
-        <img src="../assets/images/seds_logo_w.png" alt="SEDS Logo" />
-        <a class="nav-ele" href="/cubesat/">CubeSat</a>
-        <a class="nav-ele">R&D</a>
+        <div
+          class="close"
+          onclick="document.getElementById('menu').classList.remove('open')"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <h2>Projects</h2>
+        <div class="divider"></div>
+        <a class="nav-ele" href="../sacup/">Rocket</a>
+        <a class="nav-ele" href="../cansat/">CanSat</a>
+        <a class="nav-ele" href="../cubesat/">CubeSat</a>
+        <a class="nav-ele" href="../archangel/">R&D</a>
       </div>
       <nav class="navbar row">
         <i
           id="menu-open"
-          onclick="document.getElementById('menu').classList.toggle('open')"
+          onclick="document.getElementById('menu').classList.add('open')"
           class="nav-ele fa-solid fa-bars"
         ></i>
-        <a class="nav-ele" href="/sacup/">Rocket</a>
-        <a class="nav-ele" href="/cansat/">CanSat</a>
+        <a class="nav-ele" href="../sacup/">Rocket</a>
+        <a class="nav-ele" href="../cansat/">CanSat</a>
         <img src="../assets/images/seds_logo_w.png" alt="SEDS Logo" />
-        <a class="nav-ele" href="/cubesat/">CubeSat</a>
-        <a class="nav-ele">R&D</a>
+        <a class="nav-ele" href="../cubesat/">CubeSat</a>
+        <a class="nav-ele" href="../archangel/">R&D</a>
         <i class="nav-ele fa fa-search" aria-hidden="true"></i>
       </nav>
       <section id="carousel-section">
