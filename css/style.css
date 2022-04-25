@@ -76,7 +76,14 @@ nav i:last-child {
 nav > * {
   margin: 0 18px;
 }
-
+@media screen and (max-width: 720px) {
+  nav img {
+    height: 70%;
+  }
+  nav a {
+    display: none;
+  }
+}
 /* Blue underline Link */
 
 h1 {
