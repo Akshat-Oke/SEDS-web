@@ -76,12 +76,18 @@ nav i:last-child {
 nav > * {
   margin: 0 18px;
 }
+nav i.nav-ele {
+  display: none;
+}
 @media screen and (max-width: 720px) {
   nav img {
     height: 70%;
   }
   nav a {
     display: none;
+  }
+  nav i.nav-ele {
+    display: block;
   }
 }
 /* Blue underline Link */
@@ -180,13 +186,13 @@ a:active {
 }
 .menu a {
   color: #121;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   margin-bottom: 8px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .menu h2 {
   text-transform: uppercase;
-  font-size: 3.4rem;
+  font-size: 3rem;
 }
 .menu .divider {
   width: 85%;
