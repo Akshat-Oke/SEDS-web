@@ -87,6 +87,17 @@
     </style>
   </head>
   <body>
+    <div class="loading-main">
+      <div class="box">
+        <div class="container">
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+        </div>
+        Loading
+      </div>
+    </div>
     <div class="menu" id="menu">
       <div
         class="close"
@@ -389,5 +400,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/ScrollTrigger.min.js"></script>
     <script src="index.js"></script>
+    <script defer>
+      window.onload = () => {
+        document.getElementsByClassName("loading-main")[0].style.display =
+          "none";
+        // document.body.style.overflowY = "auto";
+      };
+    </script>
   </body>
 </html>

@@ -191,7 +191,7 @@ function positionLabels() {
   const width = dimensions.width;
   console.log("left", left, "top", top)
   const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-  if (vw > 650 || true) {
+  if (vw > 650) {
     applyPos("nose", 17, 28, 120);
     applyPos("structures", 45, 27.7, 120);
     applyPos("payload", 34, 27.7, 150);
@@ -200,6 +200,13 @@ function positionLabels() {
     applyPos("airbrakes", 46, 27.7, 120);
     applyPos("propulsion", 34, 28.6, 120);
   } else {
+    applyPos("nose", 17, 28, 30);
+    applyPos("structures", 45, 27.7, 30);
+    applyPos("payload", 45, 30, 30);
+    applyPos("recovery", 40, 27.7, 60);
+    applyPos("avionics", 63, 27.7, 60);
+    applyPos("airbrakes", 48.1, 30, 32);
+    applyPos("propulsion", 34, 28.6, 30);
 
   }
   function applyPos(lname, topOffset, leftOffset, addLeftOffset = 0) {

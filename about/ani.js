@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
           duration: 1,
           alpha: 1,
           scrollTrigger: {
-            markers: true,
             trigger: "#about",
             start: `top+=${10 + i * 160}px top`,
             end: "bottom center"

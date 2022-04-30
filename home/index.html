@@ -58,6 +58,44 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/themes/splide-default.min.css"
     />
+    <style>
+      svg {
+        filter: invert(99%) sepia(9%) saturate(655%) hue-rotate(8deg)
+          brightness(117%) contrast(100%);
+      }
+      .splide__arrow {
+        background: transparent;
+        height: 2.6em;
+        width: 2.6em;
+        border: 3px solid white;
+      }
+      .splide__pagination__page {
+        border-radius: 0;
+        width: 45px;
+        /* background: #fff; */
+        height: 4px;
+        margin-right: 11px;
+      }
+      .splide__pagination__page.is-active {
+        background: #fff;
+        transform: scale(1.1);
+      }
+      @media screen and (max-width: 720px) {
+        nav {
+          filter: invert(0.9);
+        }
+        canvas {
+          max-width: none;
+          height: 80vh;
+        }
+        .visible {
+          visibility: visible;
+          position: relative;
+          background-color: #ddd;
+          opacity: 1;
+        }
+      }
+    </style>
   </head>
   <body>
     <canvas id="intro-video"></canvas>
@@ -93,8 +131,16 @@
         <i class="nav-ele fa fa-search" aria-hidden="true"></i>
       </nav>
       <section id="carousel-section">
+        <div style="height: 40vh" class="menu visible">
+          <h2>Projects</h2>
+          <div class="divider"></div>
+          <a class="nav-ele" href="../sacup/">Rocket</a>
+          <a class="nav-ele" href="../cansat/">CanSat</a>
+          <a class="nav-ele" href="../cubesat/">CubeSat</a>
+          <a class="nav-ele" href="../archangel/">R&D</a>
+        </div>
         <!-- Carousel -->
-        <div class="splide" id="image-slider">
+        <div class="splide" id="image-slider" style="height: 48vh">
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
